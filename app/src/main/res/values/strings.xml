@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">UIDevelopment_one</string>
+    <string name="clickable_component">clickable component</string>
+    <string name="imageview_round_shape">imageView round shape</string>
+    <string name="imageview_animation_line">imageView animation line</string>
+    <string name="google_login">google login</string>
+    <string name="facebook_login">facebook login</string>
+    <string name="separate_line2">separate line2</string>
+    <string name="use_other_methods">Use other Methods</string>
+    <string name="separate_line1">separate line1</string>
+    <string name="new_user_register_now">New user? Register Now</string>
+    <string name="login">Login</string>
+    <string name="password_hint">***************</string>
+    <string name="login_password">Password</string>
+    <string name="example_email_com">example@email.com</string>
+    <string name="login_email">Email</string>
+    <string name="intro_image_preview">intro image preview</string>
+    <string name="register_intro_image">register intro image</string>
+    <string name="register_white_background">register white background</string>
+    <string name="register_intro_name">Name</string>
+    <string name="paul_walker">Paul Walker</string>
+    <string name="register_email_intro">Email</string>
+    <string name="example_email_com_register">example@email.com</string>
+    <string name="mobile">Mobile</string>
+    <string name="_8129_mobile">8129*****</string>
+    <string name="password">Password</string>
+    <string name="password_hint_register">*************</string>
+    <string name="register_button">Register</string>
+    <string name="back_to_login_page_button">back to login page button</string>
+    <string name="line_separate_white">line separate white</string>
+    <string name="use_other_methods_register">Use other Methods</string>
+    <string name="line_separator_white_2">line separator white 2</string>
+    <string name="facebook_register">facebook register</string>
+    <string name="google_register">google register</string>
+</resources>

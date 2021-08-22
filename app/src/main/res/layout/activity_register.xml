@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11CFC5"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:letterSpacing="0.02"
+        android:text="Here's \nyour first \nstep with \nus!"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/afterIntroWhiteGuid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageWhite"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintBottom_toTopOf="@id/afterIntroWhiteGuid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.28"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.549"
+        app:srcCompat="@drawable/group_img_white"
+        android:contentDescription="@string/register_intro_image" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/afterIntroWhiteGuid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.32" />
+
+    <ImageView
+        android:id="@+id/imageRectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/afterIntroWhiteGuid"
+        app:srcCompat="@drawable/rectangle_white"
+        android:contentDescription="@string/register_white_background" />
+
+    <TextView
+        android:id="@+id/registerNameIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/register_intro_name"
+        android:textColor="#11CFC5"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/imageRectangle"
+        app:layout_constraintTop_toTopOf="@id/imageRectangle" />
+
+    <EditText
+        android:id="@+id/registerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#18D0C6"
+        android:hint="@string/paul_walker"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@id/imageRectangle"
+        app:layout_constraintTop_toBottomOf="@id/registerNameIntro"
+        app:layout_constraintWidth_percent="0.8"
+        android:autofillHints=""
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/registerEmailIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/register_email_intro"
+        android:textColor="#11CFC5"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/imageRectangle"
+        app:layout_constraintTop_toBottomOf="@id/registerName" />
+
+    <EditText
+        android:id="@+id/registerEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#18D0C6"
+        android:hint="@string/example_email_com_register"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@id/imageRectangle"
+        app:layout_constraintTop_toBottomOf="@id/registerEmailIntro"
+        app:layout_constraintWidth_percent="0.8"
+        android:autofillHints=""
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/registerMobileIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/mobile"
+        android:textColor="#11CFC5"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/imageRectangle"
+        app:layout_constraintTop_toBottomOf="@id/registerEmail" />
+
+    <EditText
+        android:id="@+id/registerMobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#18D0C6"
+        android:hint="@string/_8129_mobile"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@id/imageRectangle"
+        app:layout_constraintTop_toBottomOf="@id/registerMobileIntro"
+        app:layout_constraintWidth_percent="0.8"
+        android:autofillHints=""
+        android:inputType="textPhonetic" />
+
+    <TextView
+        android:id="@+id/registerPasswordIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/password"
+        android:textColor="#11CFC5"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/imageRectangle"
+        app:layout_constraintTop_toBottomOf="@id/registerMobile" />
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#18D0C6"
+        android:hint="@string/password_hint_register"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@id/imageRectangle"
+        app:layout_constraintTop_toBottomOf="@id/registerPasswordIntro"
+        app:layout_constraintWidth_percent="0.8"
+        android:autofillHints=""
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintWidth_percent="0.5"
+        android:text="@string/register_button"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button_shape"
+        app:layout_constraintTop_toBottomOf="@id/registerPassword"
+        app:layout_constraintStart_toStartOf="@id/imageRectangle"
+        app:layout_constraintEnd_toEndOf="@id/imageRectangle"/>
+
+    <ImageView
+        android:id="@+id/imageViewBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="@string/back_to_login_page_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/back_to_log"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/imageViewLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/line_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageRectangle"
+        app:layout_constraintEnd_toStartOf="@id/otherMethodTxt"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:contentDescription="@string/line_separate_white" />
+
+    <TextView
+        android:id="@+id/otherMethodTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/use_other_methods_register"
+        app:layout_constraintTop_toBottomOf="@id/imageRectangle"
+        app:layout_constraintStart_toEndOf="@id/imageViewLine1"
+        app:layout_constraintEnd_toStartOf="@id/imageViewLine2"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/imageViewLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/line_white"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/otherMethodTxt"
+        app:layout_constraintTop_toBottomOf="@id/imageRectangle"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/line_separator_white_2" />
+
+    <ImageView
+        android:id="@+id/imageViewfb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/facebook_48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imageViewGoogle"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/otherMethodTxt"
+        android:contentDescription="@string/facebook_register" />
+
+    <ImageView
+        android:id="@+id/imageViewGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/google_plus_48"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/otherMethodTxt"
+        app:layout_constraintStart_toEndOf="@id/imageViewfb"
+        android:contentDescription="@string/google_register" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
