@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Ui ConstraintLayout Design</string>
+    //
+    <string name="use_other_methods">Use Other Methods</string>
+    <string name="register">Register</string>
+    <string name="password_hint">***********</string>
+    <string name="password">Password</string>
+    <string name="_0767">0767******</string>
+    <string name="mobile">Mobile</string>
+    <string name="kyloren_gmail_com">kyloren@gmail.com</string>
+    <string name="email">Email</string>
+    <string name="kylo_ren">Kylo Ren</string>
+    <string name="name">Name</string>
+    <string name="login">Login</string>
+    <string name="new_user_register_now">New User? Register Now</string>
+
+</resources>

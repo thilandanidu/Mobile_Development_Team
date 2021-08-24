@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".GdriveActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineh1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="140dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinev1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinev2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="250dp" />
+
+
+    <ImageView
+        android:id="@+id/gdriveIV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.12"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/menuIV"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/drive" />
+
+    <ImageView
+        android:id="@+id/menuIV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.12"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gdriveIV"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
+
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/search"
+        android:hint="Search"
+        android:textColorHint="#676767"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineh1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/keepTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/keeptv"
+        android:text=" Keep"
+        android:textColor="#676767"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev1"
+        app:layout_constraintBottom_toTopOf="@+id/googlephotosTV"
+        app:layout_constraintTop_toTopOf="@+id/guidelineh1" />
+
+    <TextView
+        android:id="@+id/newfolderTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/newfoldertv"
+        android:text="New Folder"
+        android:textColor="#676767"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev2"
+        app:layout_constraintBottom_toTopOf="@+id/sheetsTV"
+        app:layout_constraintTop_toTopOf="@+id/guidelineh1" />
+
+    <TextView
+        android:id="@+id/googlephotosTV"
+        android:layout_width="107dp"
+        android:layout_height="35dp"
+        android:drawableLeft="@drawable/googlephotos"
+        android:text=" Photos"
+        android:textColor="#676767"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev1"
+        app:layout_constraintBottom_toTopOf="@+id/naturepic1"
+        app:layout_constraintTop_toBottomOf="@+id/keepTV" />
+
+    <TextView
+        android:id="@+id/sheetsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/sheetstv"
+        android:text=" Sheets"
+        android:textColor="#676767"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev2"
+        app:layout_constraintBottom_toTopOf="@+id/privewslideTV"
+        app:layout_constraintTop_toBottomOf="@+id/newfolderTV"/>
+
+    <TextView
+        android:id="@+id/privewslideTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/privewslidetv"
+        android:text=" Preview the Slide"
+        android:textColor="#676767"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev2"
+        app:layout_constraintBottom_toTopOf="@+id/imageBTN"
+        app:layout_constraintTop_toBottomOf="@+id/sheetsTV"/>
+
+    <Button
+        android:id="@+id/imageBTN"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.28"
+        app:layout_constraintHeight_percent="0.06"
+        android:background="@drawable/imagesvideosfilebtn_style"
+        android:drawableRight="@drawable/imagebtn"
+        android:drawableTint="@color/black"
+        android:text="Images"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/videosBTN"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev2"
+        app:layout_constraintTop_toBottomOf="@+id/privewslideTV" />
+
+    <Button
+        android:id="@+id/videosBTN"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.28"
+        app:layout_constraintHeight_percent="0.06"
+        android:background="@drawable/imagesvideosfilebtn_style"
+        android:drawableRight="@drawable/playbtn"
+        android:drawableTint="@color/black"
+        android:text="Videos"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev2"
+        app:layout_constraintBottom_toTopOf="@+id/FilesBTN"
+        app:layout_constraintTop_toBottomOf="@+id/imageBTN" />
+
+    <Button
+        android:id="@+id/FilesBTN"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.28"
+        app:layout_constraintHeight_percent="0.06"
+        android:background="@drawable/imagesvideosfilebtn_style"
+        android:drawableRight="@drawable/musicbtn"
+        android:drawableTint="@color/black"
+        android:text="Files"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev2"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/videosBTN"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.35"
+        app:layout_constraintHeight_percent="0.06"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@drawable/homebtn"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev1" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintDimensionRatio="1:1"
+        android:background="@drawable/imagesvideosfilebtn_style"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:srcCompat="@drawable/filebtn" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintDimensionRatio="1:1"
+        android:background="@drawable/imagesvideosfilebtn_style"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profilebtn"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:srcCompat="@drawable/commentbtn" />
+
+    <ImageButton
+        android:id="@+id/profilebtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintDimensionRatio="1:1"
+        android:background="@drawable/imagesvideosfilebtn_style"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:srcCompat="@drawable/profilebtn" />
+
+    <ImageView
+        android:id="@+id/naturepic1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev1"
+        app:layout_constraintBottom_toTopOf="@+id/naturepic2"
+        app:layout_constraintTop_toBottomOf="@+id/googlephotosTV"
+        app:srcCompat="@drawable/nature1" />
+
+    <ImageView
+        android:id="@+id/naturepic2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev1"
+        app:layout_constraintBottom_toTopOf="@+id/naturepic3"
+        app:layout_constraintTop_toBottomOf="@+id/naturepic1"
+        app:srcCompat="@drawable/nature2" />
+
+    <ImageView
+        android:id="@+id/naturepic3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev1"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/naturepic2"
+        app:srcCompat="@drawable/nature3"
+        tools:layout_editor_absoluteX="45dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

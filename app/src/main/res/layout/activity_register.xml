@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#18D0C6"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/rHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:letterSpacing="0.02"
+        android:text="Here's \nyour first \nstep with \nus!"
+        android:textColor="@color/white"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/rFormHorizontalGuide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@id/rFormHorizontalGuide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group_img_white" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rFormHorizontalGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rFormVerticalGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <ImageView
+        android:id="@+id/rectangleImg"
+        android:layout_width="match_parent"
+        android:layout_height="379dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rFormHorizontalGuide"
+        app:srcCompat="@drawable/rectangle_white" />
+
+
+    <!--    Form-->
+    <TextView
+        android:id="@+id/rNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/name"
+        android:textColor="#11CFC5"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/rFormVerticalGuide"
+        app:layout_constraintTop_toTopOf="@id/rFormHorizontalGuide" />
+
+    <EditText
+        android:id="@+id/registerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:autofillHints=""
+        android:backgroundTint="#18D0C6"
+        android:hint="@string/kylo_ren"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/rFormVerticalGuide"
+        app:layout_constraintTop_toBottomOf="@id/rNameTV"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <TextView
+        android:id="@+id/rEmailTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/email"
+        android:textColor="#11CFC5"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/rFormVerticalGuide"
+        app:layout_constraintTop_toBottomOf="@id/registerName" />
+
+    <EditText
+        android:id="@+id/registerEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:autofillHints=""
+        android:backgroundTint="#18D0C6"
+        android:hint="@string/kyloren_gmail_com"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/rFormVerticalGuide"
+        app:layout_constraintTop_toBottomOf="@id/rEmailTV"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <TextView
+        android:id="@+id/rMobileTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/mobile"
+        android:textColor="#11CFC5"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/rFormVerticalGuide"
+        app:layout_constraintTop_toBottomOf="@id/registerEmail" />
+
+    <EditText
+        android:id="@+id/registerMobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:autofillHints=""
+        android:backgroundTint="#18D0C6"
+        android:hint="@string/_0767"
+        android:inputType="textPhonetic"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/rFormVerticalGuide"
+        app:layout_constraintTop_toBottomOf="@id/rMobileTV"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <TextView
+        android:id="@+id/rPaswordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/password"
+        android:textColor="#11CFC5"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/rFormVerticalGuide"
+        app:layout_constraintTop_toBottomOf="@id/registerMobile" />
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:autofillHints=""
+        android:backgroundTint="#18D0C6"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/rFormVerticalGuide"
+        app:layout_constraintTop_toBottomOf="@id/rPaswordTV"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button_shape"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintDimensionRatio="6:1"
+        app:layout_constraintEnd_toEndOf="@id/rectangleImg"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintStart_toStartOf="@id/rectangleImg"
+        app:layout_constraintTop_toBottomOf="@id/registerPassword" />
+
+
+    <TextView
+        android:id="@+id/rRegisterOptionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/use_other_methods"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rectangleImg" />
+
+
+    <ImageButton
+        android:id="@+id/lFacebookBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.11"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/rGplusBtn"
+        app:layout_constraintTop_toBottomOf="@id/rRegisterOptionTV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/facebook_48" />
+
+    <ImageButton
+        android:id="@+id/rGplusBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.11"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lFacebookBtn"
+        app:layout_constraintTop_toBottomOf="@id/rRegisterOptionTV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/google_plus_48" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

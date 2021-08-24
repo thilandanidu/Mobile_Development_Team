@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/lHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:letterSpacing="0.02"
+        android:text="Already\nhave an\nAccount?"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/lFormHorizontalGuide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/lImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@id/lFormHorizontalGuide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.28"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.549"
+        app:srcCompat="@drawable/group_img" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lFormHorizontalGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lFormVerticalGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <TextView
+        android:id="@+id/lEmailTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/email"
+        android:textColor="#11CFC5"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/lFormVerticalGuide"
+        app:layout_constraintTop_toBottomOf="@id/lFormHorizontalGuide" />
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.8"
+        android:backgroundTint="#18D0C6"
+        android:hint="@string/kyloren_gmail_com"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/lPasswordTV"
+        app:layout_constraintStart_toEndOf="@id/lFormVerticalGuide"
+        app:layout_constraintTop_toBottomOf="@id/lEmailTV" />
+
+    <TextView
+        android:id="@+id/lPasswordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/password"
+        android:textColor="#11CFC5"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/lFormVerticalGuide"
+        app:layout_constraintTop_toBottomOf="@id/userEmail" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.8"
+        android:backgroundTint="#18D0C6"
+        android:hint="@string/password_hint"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/btnLogin"
+        app:layout_constraintStart_toEndOf="@id/lFormVerticalGuide"
+        app:layout_constraintTop_toBottomOf="@id/lPasswordTV" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.05"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button_shape"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/lRegisterOptionTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userPassword"/>
+
+    <TextView
+        android:id="@+id/lRegisterOptionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="@string/new_user_register_now"
+        android:textColor="#00ADC1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin" />
+
+
+    <TextView
+        android:id="@+id/methodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/use_other_methods"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lRegisterOptionTV" />
+
+    <ImageButton
+        android:id="@+id/lFacebookBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.11"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toStartOf="@id/lGplusBtn"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/methodText"
+        app:srcCompat="@drawable/facebook_48" />
+
+    <ImageButton
+        android:id="@+id/lGplusBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.11"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lFacebookBtn"
+        app:layout_constraintTop_toBottomOf="@id/methodText"
+        app:srcCompat="@drawable/google_plus_48" />
+</androidx.constraintlayout.widget.ConstraintLayout>
