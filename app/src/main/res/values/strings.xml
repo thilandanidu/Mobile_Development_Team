@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ResultLauncher</string>
+    <string name="return_values">Return Values</string>
+    <string name="perform_addition">Perform Addition</string>
+    <string name="back">Back</string>
+    <string name="activityresultlauncher">activityResultLauncher</string>
+    <string name="display_the_result">Display the result</string>
+    <string name="enter_a_number">Enter a number</string>
+    <string name="add_numbers">Add Numbers</string>
+</resources>

@@ -1,0 +1,2 @@
+rootProject.name = "ResultLauncher"
+include ':app'
